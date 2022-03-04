@@ -1,3 +1,5 @@
+const fs = require("fs");
+const http = require("http");
 process.stdout.write("Hello \n");
 
 process.stdin.on("data", (data) =>{
