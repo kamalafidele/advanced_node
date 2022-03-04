@@ -1,0 +1,16 @@
+{
+  "name": "learn_adv_node",
+  "version": "1.0.0",
+  "description": "This is for learning some advanced nodejs packages and techniques",
+  "main": "app.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "nodemon app.js"
+  },
+  "author": "Kamara Fidele",
+  "license": "MIT",
+  "dependencies": {
+    "jasmine": "^4.0.2",
+    "request": "^2.88.2"
+  }
+}
