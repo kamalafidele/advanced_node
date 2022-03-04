@@ -15,8 +15,8 @@ describe("get todos", () =>{
     })
 });
 
-describe("check existence", () =>{
-    it("should check if the number exists in array ", () =>{
-        expect([4,12,56,90].includes(12)).toBeTrue();
-    })
-})
+// describe("check existence", () =>{
+//     it("should check if the number exists in array ", () =>{
+//         expect([4,12,56,90].includes(12)).toBeTrue();
+//     })
+// })
