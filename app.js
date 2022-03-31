@@ -1,16 +1,27 @@
+/* jshint esnext: true */
 const fs = require("fs");
 const http = require("http");
-const server = http.createServer((req,res) =>{
+const EventEmmitter = require("events");
+let event= new EventEmmitter();
+
+event.on("tryMe", websiteId =>{
+    console.log(websiteId);
 })
 
-process.stdout.write("Hello \n");
 
-process.stdin.on("data", (data) =>{
-    console.log(data.toString());
+// const server = http.createServer((req,res) =>{
+// });
 
-    if(data.toString().trim() == "BYE")
-     process.exit();
+// process.stdout.write("Hello \n");
 
-})
+// process.stdin.on("data", (data) =>{
+//     console.log(data.toString());
 
-server.listen(3400);
+//     if(data.toString().trim() == "BYE")
+//      process.exit();
+
+// });
+
+// server.listen(3400);
+
+module.exports={event};

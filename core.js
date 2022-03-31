@@ -1,3 +1,4 @@
+/* jshint esnext: true */
 const path=require("path");
 const util=require("util");
 const v8=require("v8");
