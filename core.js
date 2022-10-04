@@ -1,9 +1,9 @@
 /* jshint esnext: true */
-const path=require("path");
-const util=require("util");
-const v8=require("v8");
+const path = require("path");
+const util = require("util");
+const v8 = require("v8");
 
-let joinedPath=path.join(__dirname,"www","uploads");
+let joinedPath = path.join(__dirname,"www","uploads");
 
 util.log(joinedPath);
 util.log(v8.getHeapStatistics());
