@@ -14,6 +14,7 @@
     "chromedriver": "^106.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.3",
+    "ghost-cursor": "^1.1.16",
     "har-recorder": "^0.0.1",
     "jasmine": "^4.0.2",
     "nodemon": "^2.0.15",
