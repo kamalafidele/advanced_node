@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const { PuppeteerScreenRecorder } = require('puppeteer-screen-recorder');
 const { installMouseHelper } = require('./install-mouse-helper');
-const { autoScroll } = require('./scroll');
+const { autoScroll, scrollToTop } = require('./scroll');
 
 (async() => {
     const delay = time => {
@@ -24,8 +24,9 @@ const { autoScroll } = require('./scroll');
     await page.goto('https://happierleads.com');
     // , { waitUntil: 'domcontentloaded' }
 
-    await autoScroll(page);
-    // await delay(10000);
+    const data = await autoScroll(page);
+    await delay(2000);
+    await scrollToTop(page, data.height);
 
     await recorder.stop();
     await browser.close();
